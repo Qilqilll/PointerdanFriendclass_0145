@@ -9,4 +9,15 @@ private:
 public:
 	friend void setNama(mahasiswa& a, string);
 };
+//tanda
+void setNama(mahasiswa& a, string pNama)
+{
+	a.nama = pNama;
+}
 
+int main()
+{
+	mahasiswa joko;
+	setNama(joko, "kairi kumar");
+	return 0;
+}
